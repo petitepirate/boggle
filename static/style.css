@@ -1,7 +1,24 @@
+body {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-content: center;
+	vertical-align: middle;
+	align-items: center;
+}
+
 div {
 	position: relative;
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
+	align-content: center;
+	vertical-align: middle;
+	margin: auto;
+	align-items: center;
+	text-align: center;
+	padding: 0.25rem;
 }
 
 h1 {
@@ -9,34 +26,26 @@ h1 {
 	font-size: 3rem;
 	margin: 0;
 }
+
 p {
-	position: relative;
-	display: flex;
-	justify-content: center;
+	margin: auto;
+	align-content: center;
 	width: 40%;
 	min-width: 550px;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
 		sans-serif;
 }
 
-#boggle {
-	position: relative;
-	display: flex;
-	justify-content: center;
-}
-
 #boggle-div {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	border: solid thick black;
 	height: 400px;
 	width: 400px;
 }
 
 #board {
 	width: 100%;
-	justify-content: center;
+	align-content: center;
+	vertical-align: middle;
+	margin-top: 7px;
 }
 
 td {
@@ -44,9 +53,27 @@ td {
 	height: 70px;
 	justify-content: center;
 	border: solid 1px #666;
+	text-align: center;
+	font-size: 30px;
+	font-family: Cursive;
 }
 
 tr {
 	background-color: lightcyan;
 	justify-content: center;
+}
+
+.msg {
+	padding: 1em;
+	margin: auto;
+}
+
+.msg.ok {
+	color: white;
+	background-color: green;
+}
+
+.msg.err {
+	color: white;
+	background-color: tomato;
 }
